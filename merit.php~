@@ -1,0 +1,67 @@
+ <?php
+ 
+ // Inialize session
+ session_start();
+ 
+ // Check, if username session is NOT set then this page will jump to
+ // login page
+ if (!isset($_SESSION['username'])) {
+	 header('Location: index.php');
+ }
+ 
+ ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Merit Generator 2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" type="text/javascript" src="niceforms.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="niceforms-default.css" />
+</head>
+
+<body>
+<div align="right"> Username:<?php echo $_SESSION['username']; ?><br>
+<a href="logout.php">Logout</a></div>
+<h1><center>Guru Nanak Dev Engineering College, Ludhiana</center></h1>
+<h2><center>Admission Merit Generator 2013</center></h2>
+<br><br><br>
+<div id="container">
+<form action="process.php" method='post' class="niceform">
+	<fieldset>
+    	<legend>Select your type</legend>
+        <dl>
+		<?php
+			for ($j =1;$j <=9; $j++)
+			{
+			echo "<dl><dt><label for='select'>"."Type".$j."</label></dt>";
+			echo "<dd><select size='1' id ='select' name='select".$j."'>";
+
+				if($j >= 1 && $j <= 4)
+					$k = 14;
+				elseif($j == 5 || $j == 6)
+					$k = 3;
+				else
+					$k = 1;
+
+			for ($i = 0; $i <= $k; $i++) 
+				{	
+				if($i == 0)
+					echo "<option value='Select' >Select</option>";
+				else
+	    			echo "<option value=".$j.".".$i.">".$j.".".$i."</option>";
+				}
+			echo "</select>";
+			echo "</dd></dl>";
+			}	
+		?>
+
+    <fieldset class="action">
+    	<center><input type="submit" name="submit" id="submit"
+		value="Submit" /></center>
+		<button type="button" name="test" id="test"
+			ONCLICK="window.location.href='http://localhost/merit_generator/sequence.php'">
+			Get Details about Types</button
+    </fieldset>
+</form>
+</div></body>
+</html>

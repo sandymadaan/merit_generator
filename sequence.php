@@ -1,0 +1,120 @@
+<?php
+ 
+ // Inialize session
+ session_start();
+ 
+ // Check, if username session is NOT set then this page will jump to
+ // login page
+ if (!isset($_SESSION['username'])) {
+	 header('Location: index.php');
+ }
+ 
+ ?>
+ <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Merit Generator 2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" type="text/javascript" src="niceforms.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="niceforms-default.css" />
+</head>
+
+<body>
+<div align="right"> Username:<?php echo $_SESSION['username']; ?><br>
+<a href="logout.php">Logout</a></div>
+<h1>MERIT SEQUENCES	</h1>	
+<table>		
+<tr><th>1</th><th>(85% + urban + nsm + main categories including general)</th></tr>
+	<tr><td>1.1</td><td>(85%+Urban+NSM+Main categories including General)</td></tr>
+	<tr><td>1.2	</td><td>(85%+Urban+NSM+Backward Area (BA)</td></tr>
+	<tr><td>1.3	</td><td>(85%+Urban+NSM+Backward Class (BC)</td></tr>
+	<tr><td>1.4</td><td>	(85%+Urban+NSM+Border Area (BR)</td></tr>
+	<tr><td>1.5</td><td>	(85%+Urban+NSM+PM)</td></tr>
+	<tr><td>1.6	</td><td>(85%+Urban+NSM+ Defence (DF))</td></tr>
+	<tr><td>1.7	</td><td>(85%+Urban+NSM+ DP1</td></tr>
+	<tr><td>1.8	</td><td>(85%+Urban+NSM+ DP2</td></tr>
+	<tr><td>1.9	</td><td>(85%+Urban+NSM+ DP3</td></tr>
+	<tr><td>1.10	</td><td>(85%+Urban+NSM+ Freedom Fighter (FF)</td></tr>
+	<tr><td>1.11	</td><td>(85%+Urban+NSM+ Riot Affected (RT)</td></tr>
+	<tr><td>1.12	</td><td>(85%+Urban+NSM+ Schedule Caste(SC)</td></tr>
+	<tr><td>1.13	</td><td>(85%+Urban+NSM+ Sports Person(SP)</td></tr>
+	<tr><td>1.14	</td><td>(85%+Urban+NSM+ (TS)</td></tr>
+	</table>	
+		<table>
+		<tr><th>2</th><th>(85% + rural + nsm + main categories including general)</th></tr>
+	<tr><td>2.1	 </td><td>(85%+Rural+NSM+Main categories including General)</td></tr>
+	<tr><td>2.2	</td><td>(85%+Rural+NSM+Backward Area (BA)</td></tr>
+	<tr><td>2.3</td><td>	(85%+Rural+NSM+Backward Class (BC)</td></tr>
+	<tr><td>2.4	</td><td>(85%+Rural+NSM+Border Area (BR)</td></tr>
+	<tr><td>2.5	</td><td>(85%+Rural+NSM+PM)</td></tr>
+	<tr><td>2.6	</td><td>(85%+Rural+NSM+ Defence (DF)</td></tr>
+	<tr><td>2.7	</td><td>(85%+Rural+NSM+ DP1)</td></tr>
+	<tr><td>2.8	</td><td>(85%+Rural+NSM+ DP2)</td></tr>
+	<tr><td>2.9	</td><td>(85%+Rural+NSM+ DP3)</td></tr>
+	<tr><td>2.10	</td><td>(85%+Rural+NSM+ FF)</td></tr>
+	<tr><td>2.11	</td><td>(85%+Rural+NSM+ RT)</td></tr>
+	<tr><td>2.12	</td><td>(85%+Rural+NSM+ SC)</td></tr>
+	<tr><td>2.13	</td><td>(85%+Rural+NSM+ SP)</td></tr>
+	<tr><td>2.14	</td><td>(85%+Rural+NSM+ TS)</td></tr>
+		</table>	
+		<table>
+		
+<tr><th>3	</th><th>	(85% + urban + sm + main categories including general)</th></tr>
+	<tr><td>3.1	</td><td>(85%+Urban+SM+Main categories including General)</td></tr>
+	<tr><td>3.2	</td><td>(85%+Urban+SM+Backward Area (BA)</td></tr>
+	<tr><td>3.3	</td><td>(85%+Urban+SM+Backward Class (BC)</td></tr>
+	<tr><td>3.4	</td><td>(85%+Urban+SM+Border Area (BR))</td></tr>
+	<tr><td>3.5	</td><td>(85%+Urban+SM+PM)</td></tr>
+	<tr><td>3.6	</td><td>(85%+Urban+SM+ Defence (DF)</td></tr>
+	<tr><td>3.7	</td><td>(85%+Urban+SM+ DP1</td></tr>
+	<tr><td>3.8	</td><td>(85%+Urban+SM+ DP2</td></tr>
+	<tr><td>3.9	</td><td>(85%+Urban+SM+ DP3</td></tr>
+	<tr><td>3.10	</td><td>(85%+Urban+SM+ Freedom Fighter (FF)</td></tr>
+	<tr><td>3.11	</td><td>(85%+Urban+SM+ Riot Affected (RT)</td></tr>
+	<tr><td>3.12	</td><td>(85%+Urban+SM+ Schedule Caste(SC)</td></tr>
+	<tr><td>3.13	</td><td>(85%+Urban+SM+ SP)</td></tr>
+	<tr><td>3.14	</td><td>(85%+Urban+SM+ TS)</td></tr>
+		
+		</table>	
+		<table>
+<tr><th>4		</th><th> (85% + rural + sm + main categories including general)</th></tr>
+	<tr><td>4.1	</td><td>(85%+Rural+SM+Main categories including General)</td></tr>
+	<tr><td>4.2	 </td><td>(85%+Rural+SM+Backward Area (BA)</td></tr>
+	<tr><td>4.3	</td><td>(85%+Rural+SM+Backward Class (BC)</td></tr>
+	<tr><td>4.4	</td><td>(85%+Rural+SM+Border Area (BR)</td></tr>
+	<tr><td>4.5	</td><td>(85%+Rural+SM+PM</td></tr>
+	<tr><td>4.6	</td><td>(85%+Rural+SM+ Defence (DF))</td></tr>
+	<tr><td>4.7	</td><td>(85%+Rural+SM+ DP1)</td></tr>
+	<tr><td>4.8	</td><td>(85%+Rural+SM+ DP2)</td></tr>
+	<tr><td>4.9	</td><td>(85%+Rural+SM+ DP3)</td></tr>
+	<tr><td>4.10	</td><td>(85%+Rural+SM+ FF)</td></tr>
+	<tr><td>4.11	</td><td>(85%+Rural+SM+ RT)</td></tr>
+	<tr><td>4.12	</td><td>(85%+Rural+SM+ Schedule Caste (SC)</td></tr>
+	<tr><td>4.13	</td><td>(85%+Rural+SM+ SP)</td></tr>
+	<tr><td>4.14	</td><td>(85%+Rural+SM+ TS)</td></tr>
+		
+		</table>	
+		<table>
+<tr><th>5	</th><th>	 (15% +nsm + main categories including general)</th></tr>
+	<tr><td>5.1	</td><td>(15%+NSM+Main Categories including General)</td></tr>
+	<tr><td>5.2	</td><td>(15%+NSM+Backward Class (BC)</td></tr>
+	<tr><td>5.3	</td><td>(15%+NSM+Schedule Caste (SC)</td></tr>
+		</table>	
+		<table>
+		
+<tr><th>6	</th><th>	(15% +sm + main categories including general)</th></tr>
+	<tr><td>6.1	</td><td>15%+SM+Main Categories including General</td></tr>
+	<tr><td>6.2	</td><td>15%+SM+Backward Class (BC)</td></tr>
+	<tr><td>6.3	</td><td>15%+SM+(SC)</td></tr>
+		</table>	
+		<table>
+		
+<tr><th>7	</th><th>	(85% without reservation)</th></tr>
+</table>	
+		<table>
+<tr><th>8	</th><th>	(15% Without Reservation)</th></tr>
+</table>	
+		<table>
+<tr><th>9	</th><th>	(85% + 15% Merged Open Pool - Without Reservation)</th></tr>
+</table>	
+	</body>
+	</html>
